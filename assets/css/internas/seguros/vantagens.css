@@ -1,0 +1,15 @@
+/* background */
+.vantagens-bg{
+  background-color: black;
+}
+/* Container */
+.container-vantagens{
+  padding: 6rem 0;
+}
+/* Vantagens */
+.vantagens-tipos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5rem;
+  gap: 3rem;
+}

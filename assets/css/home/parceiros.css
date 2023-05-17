@@ -1,0 +1,32 @@
+/* Background */
+.parceiros-bg{
+  background-color: var(--cor-2);
+}
+/* Container */
+.container-parceiros {
+  padding: 6rem 0;
+  padding-top: 12rem;
+}
+.container-card-parceiros{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.titulo-parceiros{
+  color: var(--cor-11);
+  text-transform: lowercase;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 3.7rem;
+}
+/* Parceiros */
+.container-items-parceiros{
+  padding: 4rem;
+}
+.container-grid-parceiros{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}

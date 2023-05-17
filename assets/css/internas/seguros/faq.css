@@ -1,0 +1,36 @@
+/* background */
+.faq-bg{
+  background-color: rgb(255, 255, 255);
+}
+/* Container */
+.container-faq{
+  padding: 6rem 0;
+}
+/* Faq */
+.card-faq{
+  margin-top: 30px;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card-faq-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-faq-desc{
+  padding-top: 1rem;
+}
+summary::before{
+  content: '▄';
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--cor-p2);
+  position: relative;
+  bottom: 5px;
+}
+summary::marker {
+  content: '';
+}
+

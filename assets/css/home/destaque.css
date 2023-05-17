@@ -1,0 +1,44 @@
+/* Background */
+.destaque-bg{
+  background-color: var(--cor-12);
+}
+/* Container Principal */
+.container-destaque{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+/* Conteudo */
+.container-destaque{
+  margin-bottom: -100px;
+}
+.conteudo-destaque{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 512px;
+}
+.titulo-destaque{
+  color: var(--cor-0);
+  text-transform: lowercase;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.desc-destaque{
+  color: var(--cor-0);
+}
+/* Imagem */
+.container-imagem-destaque {
+  width: 640px;
+  height: 800px;
+}
+.container-imagem-destaque img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
