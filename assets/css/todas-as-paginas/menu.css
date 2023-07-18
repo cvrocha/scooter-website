@@ -24,11 +24,53 @@
   align-items: center;
   gap: 5rem;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 .text-menu a{
   color: var(--cor-0);
+  display: inline-block;
   text-decoration: none;
+  position: relative;
 }
-.text-menu a:hover{
-  text-decoration: underline;
+.text-menu a::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: var(--cor-0);
+  margin-top: 4px;
+  transition: .3s ease-in-out;
+  position: absolute;
+}
+.text-menu a:hover::after{
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .text-menu a{
+    background: #111111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  .text-menu a:hover{
+    background: #2e2e2e;
+    transition: .3s ease-in-out;
+  }
+  .text-menu a::after{
+    display: none;
+  }
+  .menu {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .container-menu{
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .logo-menu{
+    padding: 1rem;
+  }
 }

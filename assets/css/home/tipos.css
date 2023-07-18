@@ -42,7 +42,7 @@
   display: flex;
   justify-content: center; 
   align-items: flex-start;
-  gap: .1rem;
+  gap: 2rem;
 }
 .modelos{
   display: flex;
@@ -61,4 +61,27 @@
   height: 1000px;
   object-fit: cover;
   margin-top: -80px;
+}
+@media screen and (max-width: 991px) {
+  .container-imagem-tipos {
+    display: none;
+  }
+  .container-tipos, .tipos-bg {
+    min-height: 580px;
+    padding: 2rem;
+  }
+  .container-tipos {
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-modelos {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 575px) {
+  .titulo-modelo {
+    width: 100%;
+  }
 }

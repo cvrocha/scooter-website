@@ -7,8 +7,8 @@
 /* Container footer bottom */
 .footer-bottom{
   display: flex;
+  align-items: start;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 0 5rem;
   padding-top: 3rem;
   gap: 5rem;
@@ -29,7 +29,7 @@
   align-items: start;
   flex-direction: column;
   gap: 1.5rem;
-  flex-basis: 400px;
+  flex-basis: 399px;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -120,4 +120,23 @@
 .text-copyright{
   color: var(--cor-6);
   padding: 0.5rem 1rem;
+}
+@media screen and (max-width: 991px){
+  .footer-bottom{
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  .logo-bottom{
+    display: none;
+  }
+  .border-contacts-bottom{
+    width: 100%;
+    max-width: 360px;
+  }
+}
+@media screen and (max-width:767px){
+  .footer-bottom{
+    flex-direction: column;
+  }
 }
