@@ -1,14 +1,18 @@
 /* Background */
 .breadcumbs-bg{
-  background-color: var(--cor-11);
+  background: var(--cor-11);
+  box-shadow: inset 0 0px var(--cor-0);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* Container Principal */
 .container-breadcumbs{
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 4rem;
-  padding: 6rem 0;
+  box-sizing: border-box;
+  padding: 0 3.5rem;
+  background: url(/assets/images/bottom-left.svg) no-repeat bottom 43px right 21px;
 }
 /* Conteudo */
 .conteudo-breadcumbs{
@@ -16,5 +20,17 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  width: 512px;
+  width: 100%;
+}
+/* Titulo */
+/* .breadcumb-titulos{
+
+} */
+
+@media screen and (max-width: 991px){
+  .titulo-tema p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }

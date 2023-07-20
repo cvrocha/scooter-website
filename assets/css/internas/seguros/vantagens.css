@@ -10,6 +10,34 @@
 .vantagens-tipos{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 5rem;
+  padding: 5rem 0;
   gap: 3rem;
+}
+.view-seguros .seguros-bg {
+  padding-bottom: 50px;
+}
+.view-seguros .card-prata {
+  margin: 0;
+}
+.view-seguros .card-seguros {
+  justify-content: start;
+}
+@media screen and (max-width: 991px){
+  .view-seguros .card-seguros {
+    margin-top: 0;
+    align-items: start;
+    width: 100%;
+  }
+  .view-seguros .card-prata,
+  .view-seguros .card-ouro{
+    width: 100%;
+  }
+  .vantagens-tipos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px){
+  .vantagens-tipos {
+    grid-template-columns: 1fr;
+  }
 }

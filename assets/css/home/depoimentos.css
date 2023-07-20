@@ -25,34 +25,32 @@
   align-items: start;
   width: 100%;
   gap: 1.5rem;
-  padding: 3rem;
   box-sizing: border-box;
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+  background: url(/assets/images/bottom-left.svg) no-repeat bottom 40px right 40px;
 }
 .desc-depoimento p{
-  color: var(--cor-p5);
-  font-family: 'Merriweather', serif;
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-.desc-depoimento p::before{
-  content: '\f10d';
-  font-size: 2.5rem;
+  max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-style: italic;
   font-weight: 900;
-  font-family: "Font Awesome 6 Free";
-  color: var(--cor-p2);
+  margin-bottom: 32px;
   position: relative;
-  bottom: 10px;
-  margin-right: 5px;
 }
-.desc-depoimento p::after{
-  content: '\f10e';
-  font-size: 2.5rem;
-  font-weight: 900;
-  font-family: "Font Awesome 6 Free";
+.desc-depoimento p::before,
+.desc-depoimento p::after {
+  font-size: 5rem;
   color: var(--cor-p2);
-  position: relative;
-  top: 10px;
-  margin-left: 5px;
+  position: absolute;
+}
+.desc-depoimento p::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+.desc-depoimento p::after {
+  content: "”";
 }
 .pessoa-depoimento{
   color: var(--cor-p4);
@@ -63,5 +61,10 @@
 @media screen and (max-width: 767px){
     .container-depoimentos {
       flex-direction: column;
+  }
+  .image-depoimento {
+    width: 100%;
+    max-height: 100%;
+    height: 250px;
   }
 }

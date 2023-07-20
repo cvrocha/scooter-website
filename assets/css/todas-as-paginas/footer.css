@@ -115,11 +115,12 @@
   align-items: center;
   position: relative;
   bottom: 0;
-  padding: 2rem;
+  padding: 0 5rem;
+  margin: 60px 20px;
 }
 .text-copyright{
   color: var(--cor-6);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 }
 @media screen and (max-width: 991px){
   .footer-bottom{

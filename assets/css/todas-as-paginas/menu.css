@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 0 5rem;
+  padding: 0 3.5rem;
 }
 /* Logo menu */
 .logo-menu a{
@@ -22,9 +22,10 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
+  padding-right: 0;
 }
 .text-menu a{
   color: var(--cor-0);

@@ -1,17 +1,20 @@
 /* Background */
 .termos-bg{
-  background-color: #E5E5E5;
+  background-color: var(--cor-0);
 }
 /* Container */
-
 .container-termos{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 6rem 0;
-}
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 6rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .items-termos{
   display: flex;
@@ -20,4 +23,10 @@
   flex-direction: column;
   gap: 2rem;
   width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+    .items-termos {
+      width: 100%;
+    }
 }
