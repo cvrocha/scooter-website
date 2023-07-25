@@ -12,7 +12,7 @@
   justify-content: start;
   box-sizing: border-box;
   padding: 0 3.5rem;
-  background: url(/assets/images/bottom-left.svg) no-repeat bottom 43px right 21px;
+  background: url(./assets/images/bottom-left.svg) no-repeat bottom 43px right 21px;
 }
 /* Conteudo */
 .conteudo-breadcumbs{

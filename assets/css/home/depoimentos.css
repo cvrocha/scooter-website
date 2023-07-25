@@ -28,7 +28,7 @@
   box-sizing: border-box;
   padding: 40px 40px 80px 80px;
   align-self: end;
-  background: url(/assets/images/bottom-left.svg) no-repeat bottom 40px right 40px;
+  background: url(./assets/images/bottom-left.svg) no-repeat bottom 40px right 40px;
 }
 .desc-depoimento p{
   max-width: 32ch;

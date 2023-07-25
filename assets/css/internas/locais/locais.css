@@ -1,0 +1,57 @@
+/* background */
+.locais-bg{
+  background-color: var(--cor-1);
+}
+/* Container */
+.container-locais{
+  padding: 6rem 0;
+}
+/* locais */
+.container-card{
+  display: grid;
+  grid-template-columns: 1fr max(560px, 100%) 1fr;
+  gap: 40px;
+}
+.card-locais{
+  margin-top: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--cor-0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 560px;
+  max-width: 100%;
+}
+.card-locais iframe{
+  border-radius: 10px 10px 0 0;
+  height: 260px;
+  width: 560px;
+  max-width: 100%;
+}
+.card-locais-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.desc-locais{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.enderecos-locais{
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 50%) 1fr;
+  gap: 40px;
+}
+.email-locais,
+.endereco-locais{
+  color: var(--cor-5);
+  list-style-type: none !important;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-left: 2px solid var(--cor-2);
+  padding-left: 10px;
+}
